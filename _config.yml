@@ -1,5 +1,7 @@
 theme: jekyll-theme-minimal
 title: Almudena Zhou Ramírez López
+plugins:
+  - jekyll-tabs
 description: >
   <div>
   <a href="https://es.linkedin.com/in/almudena-zhou-ramirez-lopez">My LinkedIn</a>
@@ -8,7 +10,7 @@ description: >
   <a href="https://github.com/AlmudenaZhou">My GitHub</a>
   </div>
   <div>
-  <a href="pdf/AlmudenaZhouRamirezLopezCVEnglish.pdf">CV</a>
+  <a href="assets/pdf/AlmudenaZhouRamirezLopezCVEnglish.pdf">CV</a>
   </div>
 
 skills: >
