@@ -1,12 +1,13 @@
-## Portfolio
+# Portfolio
 
 ---
 
-### Projects
+## Projects
 
 ---
 
-[Data Engineer GH Archive](https://github.com/AlmudenaZhou/data-engineer-gharchive)
+### [Data Engineer GH Archive](https://github.com/AlmudenaZhou/data-engineer-gharchive)
+
 ---
 
 The aim is to monitor top GitHub contributors and analyze their actions. Leveraging data from [GH Archive](https://www.gharchive.org/), the project focuses on performing a **ETL**: cleaning raw data, inserting them in a **data lake** and processing them into a **data warehouse**. The pipeline handles both **batch** (historical) and **current hourly data processing**.
