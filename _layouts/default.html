@@ -28,6 +28,10 @@
          <img src="{{site.logo | relative_url}}" alt="Logo" />
          {% endif %}
          <p>{{ site.description | default: site.github.project_tagline }}</p>
+         <h3>Skills</h3>
+         <p>{{ site.skills }}</p>
+         <h3>Certifications</h3>
+         <p>{{ site.certifications }}</p>
          {% if site.show_downloads %}
          <ul class="downloads">
             <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>

@@ -1,10 +1,25 @@
 theme: jekyll-theme-minimal
 title: Almudena Zhou Ramírez López
 description: >
-  <br><br>
-  <br><br>
+  
+  <pre>
   <a href="https://es.linkedin.com/in/almudena-zhou-ramirez-lopez">My LinkedIn</a>
-  <br><br>
   <a href="https://github.com/AlmudenaZhou">My GitHub</a>
-  <br><br>
   <a href="pdf/AlmudenaZhouRamirezLopezCVEnglish.pdf">CV</a>
+  </pre>
+
+skills: >
+  <pre>
+  Python: numpy, pandas, sklearn
+  Databricks, Spark, MLFlow
+  Azure
+  LLMs, RAGs, fine-tuning
+  Terraform
+  Docker
+  </pre>
+
+certifications: >
+  <pre>
+  <a href="https://learn.microsoft.com/en-us/users/almudenazhouramrezlpez-9156/credentials/4c8f214d0262676a">Azure AI-102 certification</a>
+  <a href="https://certificate.datatalks.club/dezoomcamp/2024/b1c7c7fc44002719bc87f4c166716cc5d828a858.pdf">Data Engineering Zoomcamp</a>
+  </pre>
