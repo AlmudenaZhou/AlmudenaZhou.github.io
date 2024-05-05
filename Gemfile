@@ -1,3 +1,5 @@
+source 'http://rubygems.org'
+
 group :jekyll_plugins do
     # ... other gems
     gem "jekyll-tabs"
