@@ -55,7 +55,7 @@ Through leveraging data from GH Archive, I've developed an Extract, Transform, L
 
 {% endtab %}
 
-{% tab log Games(Python OOP) %}
+{% tab log Python %}
 
 ### [Factories Pygame Boardgame](https://github.com/AlmudenaZhou/Factories-PygameBoardGame)
 
