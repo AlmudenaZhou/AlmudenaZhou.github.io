@@ -3,11 +3,13 @@
     justify-content: center;
 }
 
-.link {
-    font-size: 5vw;
+.link svg {
+    width: 30px;
+    height: auto;
 }
 
-.link svg {
-    width: 100%;
-    height: auto;
+@media (max-width: 768px) {
+    .link svg {
+        width: 20px;
+    }
 }
