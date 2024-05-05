@@ -4,20 +4,18 @@
 }
 
 .link {
-    margin: 0 2%;
+    margin: 0 2%; /* Add space on the left and right sides of each icon */
+    width: calc(30px + 4vw); /* Set the width for the icons with additional responsive width */
 }
 
 .link svg {
-    width: calc(30px + 4vw);
-    height: auto;
+    width: 100%; /* Ensure the icon fills the container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 @media (max-width: 768px) {
     .link {
-        margin: 0 1%;
-    }
-
-    .link svg {
-        width: calc(20px + 3vw);
+        margin: 0 1%; /* Reduce space between icons for smaller screens */
+        width: calc(20px + 3vw); /* Adjust width for smaller screens */
     }
 }
