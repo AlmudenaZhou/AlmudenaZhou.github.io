@@ -3,8 +3,8 @@ remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-tabs
   - jekyll-remote-theme
-linkedin: https://es.linkedin.com/in/almudena-zhou-ramirez-lopez
-github: https://github.com/AlmudenaZhou
+linkedin: almudena-zhou-ramirez-lopez
+github: AlmudenaZhou
 email: almudena.zhou.rl@gmail.com
 description: >
   <div>
