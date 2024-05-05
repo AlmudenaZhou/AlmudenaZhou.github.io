@@ -9,7 +9,7 @@
     {% assign links = site.data.social-links %}
 {% endif %}
 
-<ul class="downloads"></ul>
+<ul class="links">
 {% for link in links %}
     {% assign link-username = site[link.name] %}
     {% if link-username %}     
