@@ -2,12 +2,14 @@
 {% assign links = '' | split: '' %}
 {% if site.social-links-order %}
     {% for link in site.social-links-order %}
-        {% assign link-elem = include.links | where: "name", link %}
+        {% assign link-elem = site.data.social-links | where: "name", link %}
         {% assign links = links | push: link-elem %}
     {% endfor %}
 {% else %}
-    {% assign links = include.links %}
+    {% assign links = site.data.social-links %}
 {% endif %}
+
+<p>{{ site.data.social-links }}</p>
 
 {% for link in links %}
     {% assign link-username = site[link.name] %}
