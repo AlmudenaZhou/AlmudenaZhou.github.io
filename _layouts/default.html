@@ -30,6 +30,7 @@
          {% endif %}
          <p>{{ site.description | default: site.github.project_tagline }}</p>
          <hr>
+         {% include icons.html %}
          {% include social-links.html %}
          <div>
          <h3>Skills</h3>
@@ -52,7 +53,6 @@
          {{ content }}
       </section>
    </div>
-   {% include icons.html %}
    <script src="/assets/js/tabs.js"></script>
    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
 </body>
