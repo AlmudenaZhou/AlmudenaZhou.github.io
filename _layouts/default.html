@@ -19,7 +19,8 @@
    <!--[if lt IE 9]>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
    <![endif]-->
-   <link rel="stylesheet" href="/assets/css/custom.css">
+   <link rel="stylesheet" href="/assets/css/tabs.css">
+   <link rel="stylesheet" href="/assets/css/icons.css">
 </head>
 <body>
    <div class="wrapper">
@@ -31,7 +32,7 @@
          <p>{{ site.description | default: site.github.project_tagline }}</p>
          <hr>
          {% include icons.html %}
-         {% include social-links.html %}
+         <p>{% include social-links.html %}</p>
          <div>
          <h3>Skills</h3>
          <p>{{ site.skills }}</p>

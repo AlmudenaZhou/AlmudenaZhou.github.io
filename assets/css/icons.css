@@ -1,0 +1,13 @@
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.link {
+    font-size: 5vw;
+}
+
+.link svg {
+    width: 100%;
+    height: auto;
+}
