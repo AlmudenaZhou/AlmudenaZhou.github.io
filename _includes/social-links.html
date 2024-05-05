@@ -3,7 +3,7 @@
 {% if site.social-links-order %}
     {% for link in site.social-links-order %}
         {% assign link-elem = site.data.social-links | where: "name", link %}
-        {% assign links = links | push: link-elem %}
+        {% assign links = links | concat: link-elem %}
     {% endfor %}
 {% else %}
     {% assign links = site.data.social-links %}
