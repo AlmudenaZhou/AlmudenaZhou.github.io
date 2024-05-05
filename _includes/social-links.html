@@ -9,12 +9,14 @@
     {% assign links = site.data.social-links %}
 {% endif %}
 
+<ul class="links"></ul>
 {% for link in links %}
     {% assign link-username = site[link.name] %}
-    {% if link-username %}
-    <a target="_blank" class="link" data-title="{{ link.url-prefix }}{{ link-username }}" href="{{ link.url-scheme | default: '//' }}{{ link.url-prefix }}{{ link-username }}" rel="me">
+    {% if link-username %}     
+     <li><a target="_blank" class="link" data-title="{{ link.url-prefix }}{{ link-username }}" href="{{ link.url-scheme | default: '//' }}{{ link.url-prefix }}{{ link-username }}" rel="me">
         <svg class="icon icon-{{ link.icon | default: link.name }}"><use xlink:href="#icon-{{ link.icon | default: link.name }}"></use></svg>
-    </a>
+    </a></li>
     {% endif %}
 {% endfor %}
+</ul>
 </div>
