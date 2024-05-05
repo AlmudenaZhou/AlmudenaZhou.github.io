@@ -3,13 +3,6 @@
     justify-content: center;
 }
 
-.link svg {
-    max-width: 30px;
-    height: auto;
-}
-
-@media (max-width: 768px) {
-    .link svg {
-        max-width: 20px;
-    }
+.link {
+    margin: 0 5%; /* Add space on the left and right sides of each icon */
 }
