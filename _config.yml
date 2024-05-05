@@ -8,7 +8,7 @@ github: AlmudenaZhou
 email: almudena.zhou.rl@gmail.com
 social-links-order: [linkedin, github, email]
 description: >
-  <div>
+  <div class=about-me>
   I am an experienced Data Scientist and AI Engineer with a strong background in developing and deploying machine learning models with additional experience in LLMs, RAGs, and prompting engineering. 
   </div>
   <br>
