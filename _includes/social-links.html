@@ -8,7 +8,6 @@
 {% else %}
     {% assign links = include.links %}
 {% endif %}
-<p>{{ links }}</p>
 
 {% for link in links %}
     {% assign link-username = site[link.name] %}
