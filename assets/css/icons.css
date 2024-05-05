@@ -6,11 +6,17 @@
 .link {
     margin: 0 2%; /* Add space on the left and right sides of each icon */
     width: calc(30px + 4vw); /* Set the width for the icons with additional responsive width */
+    position: relative; /* Position the icon container relative to its content */
 }
 
 .link svg {
     width: 100%; /* Ensure the icon fills the container */
-    height: auto; /* Maintain aspect ratio */
+    height: auto; /* Allow the height to adjust according to the width */
+    display: block; /* Make the SVG display as a block element */
+    position: absolute; /* Position the SVG absolutely within its container */
+    top: 0; /* Position the SVG at the top of its container */
+    left: 0; /* Position the SVG at the left of its container */
+    padding-top: 100%; /* Set the padding top to maintain the aspect ratio */
 }
 
 @media (max-width: 768px) {
