@@ -6,6 +6,7 @@ plugins:
 linkedin: almudena-zhou-ramirez-lopez
 github: AlmudenaZhou
 email: almudena.zhou.rl@gmail.com
+social-links-order: [linkedin, github, email]
 description: >
   <div>
   <a href="assets/pdf/AlmudenaZhouRamirezLopezCVEnglish.pdf">Download my CV</a>
