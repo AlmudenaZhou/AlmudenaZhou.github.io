@@ -4,5 +4,20 @@
 }
 
 .link {
-    margin: 0 5%;
+    margin: 0 2%;
+}
+
+.link svg {
+    width: calc(30px + 4vw);
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .link {
+        margin: 0 1%;
+    }
+
+    .link svg {
+        width: calc(20px + 3vw);
+    }
 }
