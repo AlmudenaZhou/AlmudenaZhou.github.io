@@ -1,7 +1,8 @@
-theme: jekyll-theme-minimal
 title: Almudena Zhou Ramírez López
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-tabs
+  - jekyll-remote-theme
 description: >
   <div>
   <a href="https://es.linkedin.com/in/almudena-zhou-ramirez-lopez">My LinkedIn</a>
