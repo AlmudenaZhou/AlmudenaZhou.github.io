@@ -20,7 +20,7 @@ The aim is to monitor top GitHub contributors and analyze their actions. Leverag
 
 <u><b>Tools</b></u>: **Python**, **Git**, **Pyspark/Apache Spark 3**, **Google Cloud**(Cloud Run, Google Cloud Storage, Google BigQuery), **Terraform**, **Mage Orchestrator**, **Looker Studio**
 
-<img src="images/gharchive_fig.png?raw=true"/>
+<img src="assets/images/gharchive_fig.png?raw=true"/>
 
 {% endtab %}
 
@@ -32,7 +32,7 @@ The aim is to monitor top GitHub contributors and analyze their actions. Leverag
 
 <u><b>Tools</b></u>: **Python**, **Git**, **Pyspark/Apache Spark 3**, **Google Cloud**(Cloud Run, Google Cloud Storage, Google BigQuery), **Terraform**, **Mage Orchestrator**, **Looker Studio**
 
-<img src="images/gharchive_fig.png?raw=true"/>
+<img src="assets/images/gharchive_fig.png?raw=true"/>
 
 {% endtab %}
 
