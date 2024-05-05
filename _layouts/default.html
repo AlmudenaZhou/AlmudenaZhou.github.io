@@ -30,10 +30,10 @@
          {% if site.logo %}
          <img src="{{site.logo | relative_url}}" alt="Logo" />
          {% endif %}
-         <p>{{ site.description | default: site.github.project_tagline }}</p>
-         <hr>
+         <p>{{ site.description | default: site.github.project_tagline }}
          {% include icons.html %}
-         <p>{% include social-links.html %}</p>
+         {% include social-links.html %}</p>
+         <hr>
          <div>
          <h3>Skills</h3>
          <p>{{ site.skills }}</p>
