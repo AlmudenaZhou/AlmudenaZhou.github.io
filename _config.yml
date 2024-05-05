@@ -3,13 +3,10 @@ remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-tabs
   - jekyll-remote-theme
+linkedin: https://es.linkedin.com/in/almudena-zhou-ramirez-lopez
+github: https://github.com/AlmudenaZhou
+email: almudena.zhou.rl@gmail.com
 description: >
-  <div>
-  <a href="https://es.linkedin.com/in/almudena-zhou-ramirez-lopez">My LinkedIn</a>
-  </div>
-  <div>
-  <a href="https://github.com/AlmudenaZhou">My GitHub</a>
-  </div>
   <div>
   <a href="assets/pdf/AlmudenaZhouRamirezLopezCVEnglish.pdf">Download my CV</a>
   </div>
