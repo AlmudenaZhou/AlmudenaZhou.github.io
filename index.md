@@ -7,24 +7,33 @@ layout: default
 <hr>
 
 
-{% assign selectedTags = page.selectedTags | split: "," %}
+{% if page.selectedTags %}
+  {% assign selectedTags = page.selectedTags | split: "," %}
+{% else %}
+  {% assign selectedTags = "" %}
+{% endif %}
 
 {% tabs projects %}
 
 <!-- All projects -->
 {% tab projects All%}
-{% assign selectedTags = page.selectedTags | split: "," %}
 <ul>
   {% for project in site.projects %}
-    {% for tag in selectedTags %}
-        {% if tag in project.tags %}
+    {% if page.selectedTags != "" %}
+      {% if project.tags contains page.selectedTags %}
         <li>
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
         </li>
         <hr>
-        {% endif %}
-    {% endfor %}
+      {% endif %}
+    {% else %}
+        <li>
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.content | markdownify }}</p>
+        </li>
+        <hr>
+    {% endif %}
   {% endfor %}
 </ul>
 
@@ -36,15 +45,21 @@ layout: default
 <ul>
   {% for project in site.projects %}
     {% if project.category == "data-engineer" %}
-    {% for tag in selectedTags %}
-        {% if tag in project.tags %}
-        <li>
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.content | markdownify }}</p>
-        </li>
-        <hr>
+      {% if page.selectedTags != "" %}
+        {% if project.tags contains page.selectedTags %}
+          <li>
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.content | markdownify }}</p>
+          </li>
+          <hr>
         {% endif %}
-    {% endfor %}
+      {% else %}
+          <li>
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.content | markdownify }}</p>
+          </li>
+          <hr>
+      {% endif %}
     {% endif %}
   {% endfor %}
 </ul>
@@ -57,15 +72,21 @@ layout: default
 <ul>
   {% for project in site.projects %}
     {% if project.category == "python" %}
-    {% for tag in selectedTags %}
-        {% if tag in project.tags %}
-        <li>
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.content | markdownify }}</p>
-        </li>
-        <hr>
+      {% if page.selectedTags != "" %}
+        {% if project.tags contains page.selectedTags %}
+          <li>
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.content | markdownify }}</p>
+          </li>
+          <hr>
         {% endif %}
-    {% endfor %}
+      {% else %}
+          <li>
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.content | markdownify }}</p>
+          </li>
+          <hr>
+      {% endif %}
     {% endif %}
   {% endfor %}
 </ul>
