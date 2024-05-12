@@ -55,7 +55,7 @@
       </header>
       <section>
          <h1>Projects</h1>
-         
+
          <h3> Filter by technical skills</h3>
          <p>Note: You can select more than one with ctrl + click</p>
          <input type="text" id="search-bar-multi-select" placeholder="Search">
@@ -103,7 +103,20 @@
                          selectedTagsContainer.appendChild(document.createTextNode(", "));
                      }
                  }
-             }
+             } 
+             searchInput.addEventListener("input", function() {
+                 var filter = searchInput.value.toLowerCase();
+                 var options = select.getElementsByTagName("option");
+                 for (var i = 0; i < options.length; i++) {
+                     var text = options[i].text.toLowerCase();
+                     if (text.includes(filter)) {
+                         options[i].style.display = "";
+                     } else {
+                         options[i].style.display = "none";
+                     }
+                 }
+                 updateSelectedTags(); // Update selected tags when search filter changes
+             });
          });
          </script>
          
