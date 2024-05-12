@@ -9,6 +9,7 @@ email: almudena.zhou.rl@gmail.com
 social-links-order: [linkedin, github, email]
 collections:
   projects:
+    output: true
 description: >
   <div class=about-me>
   I am an experienced Data Scientist and AI Engineer with a strong background in developing and deploying machine learning models with additional experience in prompting engineering, LLMs and RAGs. 
