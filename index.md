@@ -17,6 +17,7 @@ layout: default
       <h2>{{ project.title }}</h2>
       <p>{{ project.content | markdownify }}</p>
     </li>
+    <hr>
   {% endfor %}
 </ul>
 
@@ -25,15 +26,6 @@ layout: default
 <!-- Data Engineer projects -->
 {% tab projects Data Engineer %}
 
-{% for project in site.projects %}
-    {% if project.tab == "data-engineer" %}
-
-        {{ project.content }}
-        ---
-
-    {% endif %}
-{% endfor %}
-
 <ul>
   {% for project in site.projects %}
     {% if project.tab == "data-engineer" %}
@@ -41,6 +33,7 @@ layout: default
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
         </li>
+        <hr>
     {% endif %}
   {% endfor %}
 </ul>
@@ -57,6 +50,7 @@ layout: default
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
         </li>
+        <hr>
     {% endif %}
   {% endfor %}
 </ul>
