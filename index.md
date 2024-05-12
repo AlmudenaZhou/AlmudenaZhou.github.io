@@ -13,14 +13,16 @@ layout: default
   {% assign selectedTags = "" %}
 {% endif %}
 
+<p>{{selectedTags}}</p>
+
 {% tabs projects %}
 
 <!-- All projects -->
 {% tab projects All%}
 <ul>
   {% for project in site.projects %}
-    {% if page.selectedTags != "" %}
-      {% if project.tags contains page.selectedTags %}
+    {% if selectedTags != "" %}
+      {% if project.tags contains selectedTags %}
         <li>
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
@@ -45,8 +47,8 @@ layout: default
 <ul>
   {% for project in site.projects %}
     {% if project.category == "data-engineer" %}
-      {% if page.selectedTags != "" %}
-        {% if project.tags contains page.selectedTags %}
+      {% if selectedTags != "" %}
+        {% if project.tags contains selectedTags %}
           <li>
           <h2>{{ project.title }}</h2>
           <p>{{ project.content | markdownify }}</p>
@@ -72,8 +74,8 @@ layout: default
 <ul>
   {% for project in site.projects %}
     {% if project.category == "python" %}
-      {% if page.selectedTags != "" %}
-        {% if project.tags contains page.selectedTags %}
+      {% if selectedTags != "" %}
+        {% if project.tags contains selectedTags %}
           <li>
           <h2>{{ project.title }}</h2>
           <p>{{ project.content | markdownify }}</p>
