@@ -11,15 +11,24 @@ layout: default
 <!-- All projects -->
 {% tab projects All%}
 
-{% for project in site.projects %}
 <ul>
   {% for author in site.authors %}
+    <li>
+      <h2>{{ author.name }}</h2>
+      <h3>{{ author.position }}</h3>
+      <p>{{ author.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- <ul>
+  {% for project in site.projects %}
     <li>
       <h2>{{ project.title }}</h2>
       <p>{{ project.content | markdownify }}</p>
     </li>
   {% endfor %}
-</ul>
+</ul> -->
 
 {% endtab %}
 
