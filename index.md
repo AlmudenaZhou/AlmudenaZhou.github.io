@@ -12,9 +12,9 @@ layout: default
 {% tab projects All%}
 
 {% for project in site.projects %}
-    <h2>{{ project.title }}</h2>
-    <p>{{ project.content | markdownify }}</p>
-    <hr>
+    ## {{ project.title }}
+    {{ project.content | markdownify }}
+    ---
 {% endfor %}
 
 {% endtab %}
@@ -24,9 +24,9 @@ layout: default
 
 {% for project in site.projects %}
     {% if project.tab == "data-engineer" %}
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.content | markdownify }}</p>
-        <hr>
+    ## {{ project.title }}
+    {{ project.content | markdownify }}
+    ---
     {% endif %}
 {% endfor %}
 
@@ -37,9 +37,9 @@ layout: default
 
 {% for project in site.projects %}
     {% if project.tab == "python" %}
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.content | markdownify }}</p>
-        <hr>
+        ## {{ project.title }}
+        {{ project.content | markdownify }}
+        ---
     {% endif %}
 {% endfor %}
 
