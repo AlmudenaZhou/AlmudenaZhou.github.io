@@ -17,8 +17,6 @@ layout: default
     {% assign ordered_projects = site.projects %}
 {% endif %}
 
-<p>{{ ordered_projects }}<p>
-
 {% tabs projects %}
 
 <!-- All projects -->
