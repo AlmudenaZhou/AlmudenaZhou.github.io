@@ -6,10 +6,10 @@ layout: default
 
 <hr>
 
-<!-- {% tabs projects %} -->
+{% tabs projects %}
 
 <!-- All projects -->
-<!-- {% tab projects All%} -->
+{% tab projects All%}
 
 {% for project in site.projects %}
     <h2>{{ project.title }}</h2>
@@ -17,34 +17,34 @@ layout: default
     <hr>
 {% endfor %}
 
-<!-- {% endtab %} -->
+{% endtab %}
 
 <!-- Data Engineer projects -->
-<!-- {% tab projects Data Engineer %} -->
+{% tab projects Data Engineer %}
 
-<!-- {% for project in site.projects %}
+{% for project in site.projects %}
     {% if project.tab == "data-engineer" %}
 
         {{ project.content }}
         ---
 
     {% endif %}
-{% endfor %} -->
+{% endfor %}
 
-<!-- {% endtab %} -->
+{% endtab %}
 
 <!-- Python projects -->
-<!-- {% tab projects Python %} -->
+{% tab projects Python %}
 
-<!-- {% for project in site.projects %}
+{% for project in site.projects %}
     {% if project.tab == "python" %}
         {{ project.content }}
         ---
     {% endif %}
-{% endfor %} -->
-<!-- 
+{% endfor %}
+
 {% endtab %}
 
-{% endtabs %} -->
+{% endtabs %}
 
 ---
