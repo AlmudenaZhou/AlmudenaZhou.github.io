@@ -23,10 +23,11 @@ layout: default
 {% tab projects Data Engineer %}
 
 {% for project in site.projects %}
-    {% if project.tab = "data-engineer" %}
+    {% if project.tab == "data-engineer" %}
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
         <hr>
+    {% endif %}
 {% endfor %}
 
 {% endtab %}
@@ -35,10 +36,11 @@ layout: default
 {% tab projects Python %}
 
 {% for project in site.projects %}
-    {% if project.tab = "python" %}
+    {% if project.tab == "python" %}
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
         <hr>
+    {% endif %}
 {% endfor %}
 
 {% endtab %}
