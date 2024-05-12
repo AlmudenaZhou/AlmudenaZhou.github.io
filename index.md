@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# Projects
+<h1>Projects</h1>
 
----
+<hr>
 
 <!-- {% tabs projects %} -->
 
@@ -22,26 +22,26 @@ layout: default
 <!-- Data Engineer projects -->
 <!-- {% tab projects Data Engineer %} -->
 
-{% for project in site.projects %}
+<!-- {% for project in site.projects %}
     {% if project.tab == "data-engineer" %}
 
         {{ project.content }}
         ---
 
     {% endif %}
-{% endfor %}
+{% endfor %} -->
 
 <!-- {% endtab %} -->
 
 <!-- Python projects -->
 <!-- {% tab projects Python %} -->
 
-{% for project in site.projects %}
+<!-- {% for project in site.projects %}
     {% if project.tab == "python" %}
         {{ project.content }}
         ---
     {% endif %}
-{% endfor %}
+{% endfor %} -->
 <!-- 
 {% endtab %}
 
