@@ -11,17 +11,7 @@ layout: default
 <!-- All projects -->
 {% tab projects All%}
 
-<ul>
-  {% for author in site.authors %}
-    <li>
-      <h2>{{ author.name }}</h2>
-      <h3>{{ author.position }}</h3>
-      <p>{{ author.content | markdownify }}</p>
-    </li>
-  {% endfor %}
-</ul>
-
-<!-- {% for project in site.projects %}
+{% for project in site.projects %}
 <ul>
   {% for author in site.authors %}
     <li>
@@ -29,12 +19,12 @@ layout: default
       <p>{{ project.content | markdownify }}</p>
     </li>
   {% endfor %}
-</ul> -->
+</ul>
 
 {% endtab %}
 
 <!-- Data Engineer projects -->
-{% tab projects Data Engineer %}
+<!-- {% tab projects Data Engineer %}
 
 {% for project in site.projects %}
     {% if project.tab == "data-engineer" %}
@@ -45,10 +35,10 @@ layout: default
     {% endif %}
 {% endfor %}
 
-{% endtab %}
+{% endtab %} -->
 
 <!-- Python projects -->
-{% tab projects Python %}
+<!-- {% tab projects Python %}
 
 {% for project in site.projects %}
     {% if project.tab == "python" %}
@@ -57,7 +47,7 @@ layout: default
     {% endif %}
 {% endfor %}
 
-{% endtab %}
+{% endtab %} -->
 
 {% endtabs %}
 
