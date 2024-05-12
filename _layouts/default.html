@@ -56,90 +56,77 @@
       <section>
          <input type="text" id="search-bar-multi-select" placeholder="Search">
          <select id="tagSelect" multiple>
-            <!-- Options will be dynamically added here -->
+             <!-- Options will be dynamically added here -->
          </select>
          <div id="selectedTagsContainer"></div>
-
+         
          <script>
          document.addEventListener("DOMContentLoaded", function () {
-            var tags = []; // Array to store unique tags
-
-            // Iterate through Jekyll projects collection
-            {% for project in site.projects %}
-               {% for tag in project.tags %}
+             var tags = []; // Array to store unique tags
+         
+             // Iterate through Jekyll projects collection
+             {% for project in site.projects %}
+                 {% for tag in project.tags %}
                      if (!tags.includes("{{ tag }}")) {
-                        tags.push("{{ tag }}");
+                         tags.push("{{ tag }}");
                      }
-               {% endfor %}
-            {% endfor %}
-
-            var select = document.getElementById("tagSelect");
-            tags.forEach(function(tag) {
-               var option = document.createElement("option");
-               option.text = tag;
-               select.add(option);
-            });
-
-            var searchInput = document.getElementById("search-bar-multi-select");
-            var selectedTagsContainer = document.getElementById("selectedTagsContainer");
-
-            select.addEventListener("click", function(event) {
-               var target = event.target;
-               if (target.tagName === "OPTION") {
-                     toggleTagSelection(target);
-                     updateSelectedTags();
-               }
-            });
-
-            function toggleTagSelection(option) {
-               option.selected = !option.selected;
-               // Update hidden input field with selected tags
-               var selectedTags = Array.from(select.selectedOptions).map(option => option.value);
-               document.getElementById("selectedTagsInput").value = selectedTags.join(",");
-            }
-
-            function updateSelectedTags() {
-               selectedTagsContainer.innerHTML = "";
-               var selectedOptions = select.selectedOptions;
-               for (var i = 0; i < selectedOptions.length; i++) {
+                 {% endfor %}
+             {% endfor %}
+         
+             var select = document.getElementById("tagSelect");
+             tags.forEach(function(tag) {
+                 var option = document.createElement("option");
+                 option.text = tag;
+                 select.add(option);
+             });
+         
+             var searchInput = document.getElementById("search-bar-multi-select");
+             var selectedTagsContainer = document.getElementById("selectedTagsContainer");
+         
+             select.addEventListener("change", function() {
+                 updateSelectedTags();
+             });
+         
+             function updateSelectedTags() {
+                 selectedTagsContainer.innerHTML = "";
+                 var selectedOptions = select.selectedOptions;
+                 for (var i = 0; i < selectedOptions.length; i++) {
                      var tag = selectedOptions[i].text;
                      var tagElement = document.createElement("span");
                      tagElement.textContent = tag;
                      selectedTagsContainer.appendChild(tagElement);
                      if (i < selectedOptions.length - 1) {
-                        selectedTagsContainer.appendChild(document.createTextNode(", "));
+                         selectedTagsContainer.appendChild(document.createTextNode(", "));
                      }
-               }
-            }
-
-            searchInput.addEventListener("input", function() {
-               var filter = searchInput.value.toLowerCase();
-               var options = select.getElementsByTagName("option");
-               for (var i = 0; i < options.length; i++) {
+                 }
+             }
+         
+             searchInput.addEventListener("input", function() {
+                 var filter = searchInput.value.toLowerCase();
+                 var options = select.getElementsByTagName("option");
+                 for (var i = 0; i < options.length; i++) {
                      var text = options[i].text.toLowerCase();
                      if (text.includes(filter)) {
-                        options[i].style.display = "";
+                         options[i].style.display = "";
                      } else {
-                        options[i].style.display = "none";
+                         options[i].style.display = "none";
                      }
-               }
-               updateSelectedTags(); // Update selected tags when search filter changes
-            });
+                 }
+                 updateSelectedTags(); // Update selected tags when search filter changes
+             });
          });
          </script>
-
+         
          <style>
          #tagSelect {
-            display: block;
-            margin-top: 5px;
+             display: block;
+             margin-top: 5px;
          }
          #selectedTagsContainer {
-            margin-top: 5px;
-            font-style: italic;
+             margin-top: 5px;
+             font-style: italic;
          }
          </style>
-         <input type="hidden" id="selectedTagsInput" name="selectedTags" value="">
-         {{ content }}
       </section>
    </div>
    <script src="/assets/js/tabs.js"></script>
