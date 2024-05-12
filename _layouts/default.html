@@ -83,9 +83,17 @@
              var searchInput = document.getElementById("search-bar-multi-select");
              var selectedTagsContainer = document.getElementById("selectedTagsContainer");
          
-             select.addEventListener("change", function() {
-                 updateSelectedTags();
+             select.addEventListener("click", function(event) {
+                 var target = event.target;
+                 if (target.tagName === "OPTION") {
+                     toggleTagSelection(target);
+                     updateSelectedTags();
+                 }
              });
+         
+             function toggleTagSelection(option) {
+                 option.selected = !option.selected;
+             }
          
              function updateSelectedTags() {
                  selectedTagsContainer.innerHTML = "";
@@ -127,6 +135,7 @@
              font-style: italic;
          }
          </style>
+         {{ content }}
       </section>
    </div>
    <script src="/assets/js/tabs.js"></script>
