@@ -12,8 +12,9 @@ layout: default
 {% tab projects All%}
 
 {% for project in site.projects %}
-    {{ project.content }}
-    ---
+    <h2>{{ project.title }}</h2>
+    <p>{{ project.content }}</p>
+    <hr>
 {% endfor %}
 
 {% endtab %}
