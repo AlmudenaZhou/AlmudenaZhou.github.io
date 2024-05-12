@@ -8,7 +8,7 @@ I refactored an old game I developed years ago, leveraging **Object-Oriented Pro
 
 The game challenges players to dominate the board strategically by purchasing resources. Available in both **Spanish and English**, it supports multiplayer modes for **two players or solo play against AI**. Dive in to explore this project!
 
-<u><b>Tools</b></u>: **Python**, **venv**
+<u><b>Tools</b></u>: **Python**, **git**, **venv**
 
 <img src="assets/images/factories_pygame_boardgame.png?raw=true"/>
 
