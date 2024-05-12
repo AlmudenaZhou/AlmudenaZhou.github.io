@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<h1>Projects</h1>
-
 <hr>
 
 <!-- Priority order of the projects from _config.yml -->
