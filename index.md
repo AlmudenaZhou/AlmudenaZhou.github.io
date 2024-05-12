@@ -59,13 +59,14 @@ document.addEventListener("DOMContentLoaded", function () {
   var searchInput = document.getElementById('search-bar-multi-select');
 
   searchInput.addEventListener('input', function() {
-    var filter = searchInput.value.toLowerCase();
+    var filter = searchInput.value.trim().toLowerCase();
     projects.forEach(function(project) {
       var tags = project.getAttribute('data-tags').split(',');
       var showProject = tags.some(function(tag) {
         return tag.trim().toLowerCase().includes(filter);
       });
-      project.style.display = showProject ? 'block' : 'none';
+      project.style.display = showProject ? '' : 'none';
+
     });
   });
 });
