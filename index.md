@@ -70,20 +70,19 @@ document.addEventListener("DOMContentLoaded", function () {
   var projects = document.querySelectorAll('.ind-project');
   var select = document.getElementById("tagSelect");
 
-    console.log("projects: ", projects)
-    select.addEventListener('change', function() {
-    var filter = select.value.trim().toLowerCase();
+  select.addEventListener('change', function() {
+    var filters = Array.from(select.selectedOptions).map(option => option.value.trim().toLowerCase());
+    
     projects.forEach(function(project) {
       var tags = project.getAttribute('data-tags').split(',');
       var showProject = tags.some(function(tag) {
-        return tag.trim().toLowerCase().includes(filter);
+        return filters.some(function(filter) {
+          return tag.trim().toLowerCase().includes(filter);
+        });
       });
-        console.log("Filter:", filter);
-        console.log("Tags:", tags);
-        console.log("Show project:", showProject);
+
       project.style.display = showProject ? '' : 'none';
     });
-    console.log("change")
   });
 });
 </script>
