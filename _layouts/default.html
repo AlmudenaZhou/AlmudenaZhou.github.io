@@ -54,6 +54,50 @@
          {% endif %}
       </header>
       <section>
+         <input type="text" id="search-bar-multi-select" placeholder="Search">
+         <select id="tagSelect" multiple>
+            <!-- Options will be dynamically added here -->
+        </select>
+        <input type="text" id="searchInput" placeholder="Search tags...">
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tags = []; // Array to store unique tags
+        
+            // Iterate through Jekyll projects collection
+            {% for project in site.projects %}
+                {% for tag in project.tags %}
+                    if (!tags.includes("{{ tag }}")) {
+                        tags.push("{{ tag }}");
+                    }
+                {% endfor %}
+            {% endfor %}
+
+            console.log("Extracted Tags:", tags);
+        
+            // Populate select dropdown with tags
+            var select = document.getElementById("tagSelect");
+            tags.forEach(function(tag) {
+                var option = document.createElement("option");
+                option.text = tag;
+                select.add(option);
+            });
+        
+            // Add event listener to filter options based on search input
+            var searchInput = document.getElementById("searchInput");
+            searchInput.addEventListener("input", function() {
+                var filter = searchInput.value.toLowerCase();
+                var options = select.getElementsByTagName("option");
+                for (var i = 0; i < options.length; i++) {
+                    var text = options[i].text.toLowerCase();
+                    if (text.indexOf(filter) > -1) {
+                        options[i].style.display = "";
+                    } else {
+                        options[i].style.display = "none";
+                    }
+                }
+            });
+        });
+        </script>
          {{ content }}
       </section>
    </div>
