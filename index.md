@@ -6,12 +6,23 @@ layout: default
 
 <hr>
 
+<!-- Priority order of the projects from _config.yml -->
+{% assign ordered_projects = '' | split: '' %}
+{% if site.projects-order %}
+    {% for project in site.projects-order %}
+        {% assign project-elem = site.projects | where: "short_title", project %}
+        {% assign ordered_projects = ordered_projects | concat: project-elem %}
+    {% endfor %}
+{% else %}
+    {% assign ordered_projects = site.projects %}
+{% endif %}
+
 {% tabs projects %}
 
 <!-- All projects -->
 {% tab projects All %}
 <ul id="allProjects">
-  {% for project in site.projects %}
+  {% for project in ordered_projects %}
     <li class="ind-project" data-tags="{{ project.tags | join: ',' }}">
       <h2>{{ project.title }}</h2>
       <p>{{ project.content | markdownify }}</p>
@@ -24,7 +35,7 @@ layout: default
 <!-- Data Engineer projects -->
 {% tab projects Data Engineer %}
 <ul id="dataEngineerProjects">
-  {% for project in site.projects %}
+  {% for project in ordered_projects %}
     {% if project.category == "data-engineer" %}
       <li  class="ind-project" data-tags="{{ project.tags | join: ',' }}">
         <h2>{{ project.title }}</h2>
@@ -39,7 +50,7 @@ layout: default
 <!-- Python projects -->
 {% tab projects Python %}
 <ul id="pythonProjects">
-  {% for project in site.projects %}
+  {% for project in ordered_projects %}
     {% if project.category == "python" %}
       <li  class="ind-project" data-tags="{{ project.tags | join: ',' }}">
         <h2>{{ project.title }}</h2>
@@ -53,6 +64,7 @@ layout: default
 
 {% endtabs %}
 
+<!-- Filter the projects by tag -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   var projects = document.querySelectorAll('.ind-project');

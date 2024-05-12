@@ -1,5 +1,6 @@
 ---
 title: Factories Pygame Boardgame
+short_title: factories_pygame
 tags: [python, venv]
 category: python
 ---

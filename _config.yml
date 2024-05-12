@@ -7,6 +7,7 @@ linkedin: almudena-zhou-ramirez-lopez
 github: AlmudenaZhou
 email: almudena.zhou.rl@gmail.com
 social-links-order: [linkedin, github, email]
+projects-order: [gharchive_etl, factories_pygame]
 collections:
   projects:
 description: >
