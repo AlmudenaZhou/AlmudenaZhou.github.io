@@ -1,7 +1,7 @@
 ---
 title: Factories Pygame Boardgame
 tags: [python, venv]
-catgory: python
+category: python
 ---
 I refactored an old game I developed years ago, leveraging **Object-Oriented Programming (OOP) principles** and the **MVP (Model-View-Presenter) pattern**. This transformation not only improved performance but also enhanced scalability and flexibility for future updates.
 
