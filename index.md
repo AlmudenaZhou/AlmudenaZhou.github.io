@@ -6,18 +6,25 @@ layout: default
 
 <hr>
 
+
+{% assign selectedTags = page.selectedTags | split: "," %}
+
 {% tabs projects %}
 
 <!-- All projects -->
 {% tab projects All%}
-
+{% assign selectedTags = page.selectedTags | split: "," %}
 <ul>
   {% for project in site.projects %}
-    <li>
-      <h2>{{ project.title }}</h2>
-      <p>{{ project.content | markdownify }}</p>
-    </li>
-    <hr>
+    {% for tag in selectedTags %}
+        {% if tag in project.tags %}
+        <li>
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.content | markdownify }}</p>
+        </li>
+        <hr>
+        {% endif %}
+    {% endfor %}
   {% endfor %}
 </ul>
 
@@ -29,11 +36,15 @@ layout: default
 <ul>
   {% for project in site.projects %}
     {% if project.category == "data-engineer" %}
+    {% for tag in selectedTags %}
+        {% if tag in project.tags %}
         <li>
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
         </li>
         <hr>
+        {% endif %}
+    {% endfor %}
     {% endif %}
   {% endfor %}
 </ul>
@@ -46,11 +57,15 @@ layout: default
 <ul>
   {% for project in site.projects %}
     {% if project.category == "python" %}
+    {% for tag in selectedTags %}
+        {% if tag in project.tags %}
         <li>
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
         </li>
         <hr>
+        {% endif %}
+    {% endfor %}
     {% endif %}
   {% endfor %}
 </ul>
