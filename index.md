@@ -13,7 +13,7 @@ layout: default
 
 {% for project in site.projects %}
     <h2>{{ project.title }}</h2>
-    <p>{{ project.content }}</p>
+    <p>{{ project.content  | markdownify}}</p>
     <hr>
 {% endfor %}
 
