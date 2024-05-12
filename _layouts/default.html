@@ -58,6 +58,7 @@
          <select id="tagSelect" multiple>
              <!-- Options will be dynamically added here -->
          </select>
+         <div id="selectedTagsContainer"></div>
          
          <script>
          document.addEventListener("DOMContentLoaded", function () {
@@ -80,6 +81,26 @@
              });
          
              var searchInput = document.getElementById("search-bar-multi-select");
+             var selectedTagsContainer = document.getElementById("selectedTagsContainer");
+         
+             select.addEventListener("change", function() {
+                 updateSelectedTags();
+             });
+         
+             function updateSelectedTags() {
+                 selectedTagsContainer.innerHTML = "";
+                 var selectedOptions = select.selectedOptions;
+                 for (var i = 0; i < selectedOptions.length; i++) {
+                     var tag = selectedOptions[i].text;
+                     var tagElement = document.createElement("span");
+                     tagElement.textContent = tag;
+                     selectedTagsContainer.appendChild(tagElement);
+                     if (i < selectedOptions.length - 1) {
+                         selectedTagsContainer.appendChild(document.createTextNode(", "));
+                     }
+                 }
+             }
+         
              searchInput.addEventListener("input", function() {
                  var filter = searchInput.value.toLowerCase();
                  var options = select.getElementsByTagName("option");
@@ -91,6 +112,7 @@
                          options[i].style.display = "none";
                      }
                  }
+                 updateSelectedTags(); // Update selected tags when search filter changes
              });
          });
          </script>
@@ -100,8 +122,11 @@
              display: block;
              margin-top: 5px;
          }
+         #selectedTagsContainer {
+             margin-top: 5px;
+             font-style: italic;
+         }
          </style>
-         {{ content }}
       </section>
    </div>
    <script src="/assets/js/tabs.js"></script>
