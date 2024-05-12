@@ -22,7 +22,7 @@ layout: default
 {% endtab %}
 
 <!-- Data Engineer projects -->
-{% tab projects "Data Engineer" %}
+{% tab projects Data Engineer %}
 <ul id="dataEngineerProjects">
   {% for project in site.projects %}
     {% if project.category == "data-engineer" %}
