@@ -28,7 +28,7 @@ layout: default
 
 <ul>
   {% for project in site.projects %}
-    {% if project.tab == "data-engineer" %}
+    {% if project.category == "data-engineer" %}
         <li>
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
@@ -45,7 +45,7 @@ layout: default
 
 <ul>
   {% for project in site.projects %}
-    {% if project.tab == "python" %}
+    {% if project.category == "python" %}
         <li>
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
