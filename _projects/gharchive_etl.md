@@ -1,7 +1,7 @@
 ---
 title: GH Archive ETL
 short_title: gharchive_etl
-tags: [python, git, pyspark, spark, google-cloud, terraform, mage-orchestrator, looker-studio]
+tags: [python, git, pyspark, spark, google-cloud, terraform, mage-orchestrator]
 category: data-engineer
 ---
 Through leveraging data from GH Archive, I've developed an Extract, Transform, Load (**ETL**) pipeline to clean raw data, insert it into a centralized **data lake**, and process it into a structured **data warehouse** for analysis. The pipeline handles both **batch processing** for historical data and **real-time hourly updates**. By implementing this pipeline, I aimed to provide improved **insights into GitHub activity** while ensuring **data reliability** and facilitating future advanced **analytics**. 
