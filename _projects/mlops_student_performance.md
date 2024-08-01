@@ -6,7 +6,7 @@ category: mlops
 ---
 
 
-The Student Performance project compounds a comprehensive MLOps pipeline for predicting student grades, exemplifying an effective and scalable approach to deploying and maintaining machine learning models in production. Key components include:
+The Student Performance project compounds a comprehensive **MLOps pipeline** for predicting student grades, exemplifying an **effective** and **scalable** approach to **deploying** and **maintaining machine learning models** in **production**. Key components include:
 
 - **Data Preprocessing and Model Training**: Utilized **Mage** for robust data handling and model development.
 - **Experiment Tracking and Model Registry**: Implemented **MLflow** to streamline experiment tracking and model management, with artifacts securely stored on **AWS S3**.
