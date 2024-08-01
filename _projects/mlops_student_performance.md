@@ -2,7 +2,7 @@
 title: MLOps Student Performance
 short_title: mlops_student_performance
 tags: [python, git, aws, terraform, mlflow, mage-orchestrator, docker, docker-compose, grafana, sklearn, ci-cd]
-category: mlops
+category: mlops-ds
 ---
 
 

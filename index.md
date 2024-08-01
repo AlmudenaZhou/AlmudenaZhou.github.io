@@ -31,10 +31,10 @@ layout: default
 {% endtab %}
 
 <!-- MLOps projects -->
-{% tab projects MLOps %}
+{% tab projects MLOps & Data Science %}
 <ul id="mlopsProjects">
   {% for project in ordered_projects %}
-    {% if project.category == "mlops" %}
+    {% if project.category == "mlops-ds" %}
       <li  class="ind-project" data-tags="{{ project.tags | join: ',' }}">
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
