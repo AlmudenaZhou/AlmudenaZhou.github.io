@@ -30,11 +30,11 @@ layout: default
 </ul>
 {% endtab %}
 
-<!-- Data Engineer projects -->
-{% tab projects Data Engineer %}
-<ul id="dataEngineerProjects">
+<!-- MLOps projects -->
+{% tab projects MLOps %}
+<ul id="mlopsProjects">
   {% for project in ordered_projects %}
-    {% if project.category == "data-engineer" %}
+    {% if project.category == "mlops" %}
       <li  class="ind-project" data-tags="{{ project.tags | join: ',' }}">
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
@@ -45,11 +45,11 @@ layout: default
 </ul>
 {% endtab %}
 
-<!-- Python projects -->
-{% tab projects Python %}
-<ul id="pythonProjects">
+<!-- Engineering projects -->
+{% tab projects Engineering %}
+<ul id="engineeringProjects">
   {% for project in ordered_projects %}
-    {% if project.category == "python" %}
+    {% if project.category == "engineering" %}
       <li  class="ind-project" data-tags="{{ project.tags | join: ',' }}">
         <h2>{{ project.title }}</h2>
         <p>{{ project.content | markdownify }}</p>
