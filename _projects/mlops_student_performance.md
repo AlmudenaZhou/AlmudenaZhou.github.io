@@ -17,6 +17,9 @@ The Student Performance project compounds a comprehensive **MLOps pipeline** for
 - **CI/CD Pipeline**: Automated testing and deployment for seamless updates, ensuring reliability and efficiency.
 
 
+<img src="assets/images/mlops_student_performance_fig.png?raw=true"/>
+
+
 <u><b>Tools</b></u>: **Python**, **Shell Script**, **Git**, **GitHub Actions**, **MLflow**, **AWS** (Lambda with ECR, Kinesis, S3, IAM, CloudWatch), **Terraform**, **Mage**, **Docker**, **docker-compose**, **Evidently**, **Grafana**, **LocalStack**, **Makefile**, **black**, **pytest**, **isort**, **pylint**, **sklearn**, **pandas**, **numpy**, **pyproject.toml**, **Pre-commit**
 
 <Strong>[Repository link](https://github.com/AlmudenaZhou/mlops-student-performance)</strong>
