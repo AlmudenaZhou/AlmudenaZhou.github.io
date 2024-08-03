@@ -32,23 +32,22 @@
         <img src="{{site.logo | relative_url}}" alt="Logo" height="150"/>
         </div>
         {% endif %}
-
+        <div id="title">
          <h1>{{ site.title | default: site.github.repository_name }}</h1>
-
+        </div>
          <p>{{ site.description }}</p>
 
          <p>{% include icons.html %}
          {% include social-links.html %}</p>
 
-         <div>
-            <h3>Certifications</h3>
-            <p>{{ site.certifications }}</p>
-        </div>
-
          <p>{{ site.cv-download }}</p>
 
       </header>
       <section>
+        <div>
+            <h1>Certifications</h1>
+            <p>{{ site.certifications }}</p>
+        </div>
          <h1>Projects</h1>
 
          <h3> Filter by technical skills</h3>
