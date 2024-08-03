@@ -16,7 +16,7 @@ description: >
   <div>
   For more information: <a href="assets/pdf/AlmudenaZhouRamirezLopezCVEnglish.pdf">download my CV</a>
   </div>
-logo: assets/images/circle_profile_photo.png
+logo: /assets/images/circle_profile_photo.png
 certifications: >
   <div>
   <a href="https://learn.microsoft.com/en-us/users/almudenazhouramrezlpez-9156/credentials/4c8f214d0262676a">Azure AI-102 certification</a>
