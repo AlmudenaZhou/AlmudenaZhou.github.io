@@ -27,26 +27,20 @@
 <body>
    <div class="wrapper">
       <header>
-         <h1>{{ site.title | default: site.github.repository_name }}</h1>
+         <h2>{{ site.title | default: site.github.repository_name }}</h2>
          {% if site.logo %}
+         <div>
          <img src="{{site.logo | relative_url}}" alt="Logo" height="150"/>
+         </div>
          {% endif %}
-         <p>{{ site.description | default: site.github.project_tagline }}</p>
-         <hr>
+         <div>
+            <h3>Certifications</h3>
+            <p>{{ site.certifications }}</p>
+        </div>
          <p>{% include icons.html %}
          {% include social-links.html %}</p>
-         <hr>
-         <div>
-         <h3>Certifications</h3>
-         <p>{{ site.certifications }}</p>
-         </div>
-         {% if site.show_downloads %}
-         <ul class="downloads">
-            <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-            <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-            <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-         </ul>
-         {% endif %}
+         <p>{{ site.cv-download }}</p>
+
       </header>
       <section>
          <h1>Projects</h1>

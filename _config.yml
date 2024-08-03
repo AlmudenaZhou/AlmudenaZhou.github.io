@@ -14,10 +14,6 @@ description: >
   <div class=about-me>
   I am an experienced Data Scientist and AI Engineer with a strong background in developing and deploying machine learning models with additional experience in prompting engineering, LLMs and RAGs. 
   </div>
-  <br>
-  <div>
-  For more information: <a href="assets/pdf/AlmudenaZhouRamirezLopezCVEnglish.pdf">download my CV</a>
-  </div>
 logo: /assets/images/circle_profile_photo.png
 certifications: >
   <div>
@@ -25,4 +21,9 @@ certifications: >
   </div>
   <div>
   <a href="https://certificate.datatalks.club/dezoomcamp/2024/b1c7c7fc44002719bc87f4c166716cc5d828a858.pdf">Data Engineering Zoomcamp</a>
+  </div>
+
+cv-download: >
+  <div>
+  For more information: <a href="assets/pdf/AlmudenaZhouRamirezLopezCVEnglish.pdf">download my CV</a>
   </div>
