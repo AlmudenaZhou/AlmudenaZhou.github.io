@@ -8,8 +8,6 @@ github: AlmudenaZhou
 email: almudena.zhou.rl@gmail.com
 social-links-order: [linkedin, github, email]
 projects-order: [mlops_student_performance, gharchive_etl, factories_pygame]
-collections:
-  projects:
 description: >
   <div class=about-me>
   I am an experienced Data Scientist and AI Engineer with a strong background in developing and deploying machine learning models with additional experience in prompting engineering, LLMs and RAGs. 
@@ -18,27 +16,7 @@ description: >
   <div>
   For more information: <a href="assets/pdf/AlmudenaZhouRamirezLopezCVEnglish.pdf">download my CV</a>
   </div>
-
-skills: >
-  <div>
-  Python: numpy, pandas, sklearn
-  </div>
-  <div>
-  Databricks, Spark, MLFlow
-  </div>
-  <div>
-  Azure
-  </div>
-  <div>
-  LLMs, RAGs, fine-tuning
-  </div>
-  <div>
-  Docker
-  </div>
-  <div>
-  Terraform
-  </div>
-
+logo: assets/images/circle_profile_photo.png
 certifications: >
   <div>
   <a href="https://learn.microsoft.com/en-us/users/almudenazhouramrezlpez-9156/credentials/4c8f214d0262676a">Azure AI-102 certification</a>
