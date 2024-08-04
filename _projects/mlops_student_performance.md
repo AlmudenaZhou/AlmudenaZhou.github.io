@@ -13,8 +13,8 @@ The Student Performance project compounds a comprehensive **MLOps pipeline** for
 - **Inference Pipeline**: Enabled model serving via a **AWS Lambda** function and **Kinesis** for real-time streaming.
 - **Monitoring**: Integrated **Evidently** and **Grafana** for thorough tracking of model performance and data drift, with alerts sent through **SES** when drift is detected.
 - **Infrastructure Management**: Employed **Terraform** to ensure consistent and scalable infrastructure.
-- **Development Practices**: Maintained high code quality with tools, automated workflows using a **Makefile**, and enforced standards with **pre-commit hooks**.
-- **CI/CD Pipeline**: Automated testing and deployment for seamless updates, ensuring reliability and efficiency.
+- **Development Practices**: Maintained high **code quality** with tools, automated workflows using a **Makefile**, and enforced standards with **pre-commit hooks**.
+- **CI/CD Pipeline**: **Automated testing** and **deployment** for seamless updates, ensuring reliability and efficiency.
 
 
 <img src="assets/images/student_performance_fig.png?raw=true"/>
