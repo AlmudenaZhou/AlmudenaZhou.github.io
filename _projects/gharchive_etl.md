@@ -1,10 +1,17 @@
 ---
 title: GH Archive ETL
 short_title: gharchive_etl
-tags: [python, git, pyspark, spark, google-cloud, terraform, mage-orchestrator, docker, docker-compose, venv]
+tags: [python, git, pyspark, spark, google-cloud, terraform, mage-orchestrator, docker, docker-compose, venv, sql]
 category: engineering
 ---
-Through leveraging data from GH Archive, I've developed an Extract, Transform, Load (**ETL**) pipeline to clean raw data, insert it into a centralized **data lake**, and process it into a structured **data warehouse** for analysis. The pipeline handles both **batch processing** for historical data and **real-time hourly updates**. By implementing this pipeline, I aimed to provide improved **insights into GitHub activity** while ensuring **data reliability** and facilitating future advanced **analytics**. 
+
+
+The **GitHub Archive Project** constructs a **data pipeline**, **ETL**, for **analyzing GitHub's top contributors and activity types**, providing valuable insights into user actions on the platform. Key components include:
+
+- **Data Extraction and Transformation**: Integrated **Mage as an orchestrator for ETL**, with **PySpark managing data structuring** for ingestion into **BigQuery**, where events are organized by time and activity type.
+- **Infrastructure Automation**: Employed **Terraform for deploying** the project on Google Cloud, leveraging **Cloud Run** for Mage hosting, **GCS** as the data lake, and **BigQuery** as the data warehouse.
+- **Batch and Stream Processing**: Handles both **historical *batch data and near real-time streaming** with an hourly trigger to ensure continuous updates.
+- **Data Visualization**: Developed a comprehensive **Looker Studio dashboard** that displays insights into GitHub contributors, event categories, and non-commit actions for deeper analysis.
 
 <img src="assets/images/gharchive_fig.png?raw=true"/>
 
