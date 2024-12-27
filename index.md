@@ -46,7 +46,7 @@ layout: default
 {% endtab %}
 
 <!-- MLOps projects -->
-{% tab projects MLOps & Data Science %}
+{% tab projects MLOps & DS %}
 <ul id="mlopsProjects">
   {% for project in ordered_projects %}
     {% if project.category == "mlops-ds" %}
