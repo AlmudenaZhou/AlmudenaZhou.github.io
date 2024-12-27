@@ -1,21 +1,23 @@
 ---
-title: MLOps Student Performance
+title: "Student Performance: MLOps Pipeline"
 short_title: mlops_student_performance
 tags: [python, git, aws, terraform, mlflow, mage-orchestrator, docker, docker-compose, grafana, sklearn, ci-cd, venv, sql]
 category: mlops-ds
 ---
 
+A comprehensive **MLOps pipeline** for **predicting student grades**, exemplifying a scalable and effective approach to **deploying and maintaining machine learning models** in production.
 
-The Student Performance project compounds a comprehensive **MLOps pipeline** for predicting student grades, exemplifying an **effective** and **scalable** approach to **deploying** and **maintaining machine learning models** in **production**. Key components include:
+**Highlights:**
 
-- <span style="color:#6e6e6e">**Data Preprocessing and Model Training**</span>: Utilized **Mage** for robust data handling and model development.
-- <span style="color:#6e6e6e">**Experiment Tracking and Model Registry**</span>: Implemented **MLflow** to streamline experiment tracking and model management, with artifacts securely stored on **AWS S3**.
-- <span style="color:#6e6e6e">**Inference Pipeline**</span>: Enabled model serving via a **AWS Lambda** function and **Kinesis** for real-time streaming.
-- <span style="color:#6e6e6e">**Monitoring**</span>: Integrated **Evidently** and **Grafana** for thorough tracking of model performance and data drift, with alerts sent through **SES** when drift is detected.
-- <span style="color:#6e6e6e">**Infrastructure Management**</span>: Employed **Terraform** to ensure consistent and scalable infrastructure.
-- <span style="color:#6e6e6e">**Development Practices**</span>: Maintained high **code quality** with tools, automated workflows using a **Makefile**, and enforced standards with **pre-commit hooks**.
-- <span style="color:#6e6e6e">**CI/CD Pipeline**</span>: **Automated testing** and **deployment** for seamless updates, ensuring reliability and efficiency.
+- **Data Preprocessing and Model Training:** Utilized **Mage orchestrator** for robust data handling and model development.
+- **Experiment Tracking and Model Registry:** Implemented **MLflow** to streamline **experiment tracking and manage models**, with artifacts securely stored in **AWS S3**.
+- **Inference Pipeline:** Enabled **real-time model serving** using **AWS Lambda and Kinesis** for streaming predictions.
+- **Monitoring:** Integrated **Evidently and Grafana** to **monitor** model performance and detect data drift, with **alerts sent via SES** for proactive response.
+- **Infrastructure Management:** Leveraged **Terraform** to ensure consistent and scalable infrastructure provisioning.
+- **Development Practices:** Ensured **high code quality** with **pre-commit hooks**, automated workflows using a **Makefile**, and adherence to best practices.
+- **CI/CD Pipeline:** **Automated testing and deployment** processes to ensure seamless and reliable updates.
 
+**Impact:** Demonstrated the **end-to-end development of a production-ready MLOps pipeline**, enabling accurate and scalable predictions while ensuring reliability, maintainability, and efficient infrastructure management.
 
 <img src="assets/images/student_performance_fig.png?raw=true"/>
 

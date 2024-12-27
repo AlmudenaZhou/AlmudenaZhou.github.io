@@ -30,6 +30,21 @@ layout: default
 </ul>
 {% endtab %}
 
+<!-- GenAI/LLM projects -->
+{% tab projects GenAI & LLM %}
+<ul id="genAIProjects">
+  {% for project in ordered_projects %}
+    {% if project.category == "genai-llm" %}
+      <li  class="ind-project" data-tags="{{ project.tags | join: ',' }}">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.content | markdownify }}</p>
+      </li>
+      <hr>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endtab %}
+
 <!-- MLOps projects -->
 {% tab projects MLOps & Data Science %}
 <ul id="mlopsProjects">

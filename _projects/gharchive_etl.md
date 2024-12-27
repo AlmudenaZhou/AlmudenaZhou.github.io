@@ -1,17 +1,19 @@
 ---
-title: GH Archive ETL
+title: "GitHub Archive: ETL Pipeline"
 short_title: gharchive_etl
 tags: [python, git, pyspark, spark, google-cloud, terraform, mage-orchestrator, docker, docker-compose, venv, sql]
 category: engineering
 ---
 
+A **robust data pipeline** to **analyze GitHub's top contributors** and activity types, providing actionable insights into user behavior on the platform through **data engineering skills**.
 
-The **GitHub Archive Project** constructs a **data pipeline**, **ETL**, for **analyzing GitHub's top contributors and activity types**, providing valuable insights into user actions on the platform. Key components include:
+**Highlights:**
+- **Data Extraction and Transformation:** Utilized **Mage as an ETL orchestrator** and **PySpark for data structuring**, with structured data ingested into **BigQuery**, organizing events by time and activity type.
+- **Infrastructure Automation:** Automated deployment using **Terraform on Google Cloud**, integrating **Cloud Run** for Mage hosting, **GCS** as a data lake, and **BigQuery** as the data warehouse.
+- **Batch and Stream Processing:** Supported **historical batch** data **and** near real-time streaming with an **hourly trigger** for continuous updates.
+- **Data Visualization:** Created a detailed **Looker Studio dashboard** to display insights on GitHub contributors, event categories, and non-commit actions for in-depth analysis.
 
-- <span style="color:#6e6e6e">**Data Extraction and Transformation**</span>: Integrated **Mage as an orchestrator for ETL**, with **PySpark managing data structuring** for ingestion into **BigQuery**, where events are organized by time and activity type.
-- <span style="color:#6e6e6e">**Infrastructure Automation**</span>: Employed **Terraform for deploying** the project on Google Cloud, leveraging **Cloud Run** for Mage hosting, **GCS** as the data lake, and **BigQuery** as the data warehouse.
-- <span style="color:#6e6e6e">**Batch and Stream Processing**</span>: Handles both **historical batch data and near real-time streaming** with an hourly trigger to ensure continuous updates.
-- <span style="color:#6e6e6e">**Data Visualization**</span>: Developed a comprehensive **Looker Studio dashboard** that displays insights into GitHub contributors, event categories, and non-commit actions for deeper analysis.
+**Impact:** Enabled detailed analysis of GitHub user actions through a **scalable and automated pipeline**, supporting data-driven decisions for platform activity insights.
 
 <img src="assets/images/gharchive_fig.png?raw=true"/>
 

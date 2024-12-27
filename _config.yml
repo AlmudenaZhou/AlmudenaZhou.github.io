@@ -7,12 +7,12 @@ linkedin: almudena-zhou-ramirez-lopez
 github: AlmudenaZhou
 email: almudena.zhou.rl@gmail.com
 social-links-order: [linkedin, github, email]
-projects-order: [cs_ds_interview_assistant, mlops_student_performance, gharchive_etl, factories_pygame]
+projects-order: [azureml_fine_food_reviews, cs_ds_interview_assistant, mlops_student_performance, gharchive_etl, factories_pygame]
 collections:
   projects:
 description: >
   <div class=about-me>
-  I am an experienced Data Scientist and AI Engineer with a strong background in developing and deploying machine learning models with additional experience in prompting engineering, LLMs and RAGs. 
+  Hi! I’m a Data Scientist and ML/AI Engineer passionate about building impactful machine learning solutions. I specialize in end-to-end machine learning workflows, large language models (LLMs), and retrieval-augmented generation (RAGs). My curiosity for exploring new technologies has given me a deep understanding of the entire data lifecycle.
   </div>
 logo: /assets/images/circle_profile_photo.png
 certifications: >
@@ -28,8 +28,6 @@ certifications: >
   <div>
   <a href="https://certificate.datatalks.club/dezoomcamp/2024/b1c7c7fc44002719bc87f4c166716cc5d828a858.pdf">Data Engineering Zoomcamp</a>
   </div>
-
-  
 
 cv-download: >
   <div>

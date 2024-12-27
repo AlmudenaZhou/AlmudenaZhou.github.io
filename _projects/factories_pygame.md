@@ -1,13 +1,20 @@
 ---
-title: Factories Pygame Boardgame
+title: "Factories Pygame Boardgame: OOP and MVP Pattern"
 short_title: factories_pygame
 tags: [python, venv, git]
 category: engineering
 ---
 
-I refactored an old game I developed years ago, leveraging **Object-Oriented Programming (OOP) principles** and the **MVP (Model-View-Presenter) pattern**. This transformation not only improved performance but also enhanced scalability and flexibility for future updates.
+A refactored version of a strategy game I made, enhanced using **Object-Oriented Programming (OOP) principles** and the **MVP (Model-View-Presenter) pattern** to improve performance and flexibility for future updates.
 
-The game challenges players to dominate the board strategically by purchasing resources. Available in both **Spanish and English**, it supports multiplayer modes for **two players or solo play against AI**. Dive in to explore this project!
+**Highlights:**
+
+- **Enhanced Architecture:** Leveraged **OOP** principles and the **MVP pattern** to restructure the game, ensuring clean separation of concerns and easier maintainability.
+- **Multilingual Support:** Available in both Spanish and English.
+- **Game Modes:** Supports **multiplayer** for two players or solo play **against an AI** opponent.
+- **Optimized Performance:** Refactoring significantly **improved game efficiency** and responsiveness.
+
+**Impact:** Revitalized a legacy project by applying a modular software development approach, improving maintainability and scalability.
 
 <img src="assets/images/factories_pygame_boardgame.png?raw=true"/>
 
